@@ -1,0 +1,24 @@
+/* Print mode styles */
+.print-mode button,
+.print-mode input,
+.print-mode .file-uploader,
+.print-mode .print-hidden {
+  display: none !important;
+}
+
+@media print {
+  body {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  button,
+  input,
+  .file-uploader,
+  .print-hidden {
+    display: none !important;
+  }
+}
+
